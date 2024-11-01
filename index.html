@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Sistemas de Numeración</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Conversor de Sistemas de Numeración</h1>
+        <div class="converter">
+            <label for="decimal">Decimal</label>
+            <input type="text" id="decimal" placeholder="Número decimal" oninput="convertFromDecimal()">
+
+            <label for="binary">Binario</label>
+            <input type="text" id="binary" placeholder="Número binario" oninput="convertFromBinary()">
+
+            <label for="octal">Octal</label>
+            <input type="text" id="octal" placeholder="Número octal" oninput="convertFromOctal()">
+
+            <label for="hexadecimal">Hexadecimal</label>
+            <input type="text" id="hexadecimal" placeholder="Número hexadecimal" oninput="convertFromHexadecimal()">
+
+            <label for="ternary">Ternario</label>
+            <input type="text" id="ternary" placeholder="Número en base 3" oninput="convertFromTernary()">
+
+            <label for="quintal">Quintal</label>
+            <input type="text" id="quintal" placeholder="Número en base 5" oninput="convertFromQuintal()">
+
+            <label for="vigesimal">Vigesimal</label>
+            <input type="text" id="vigesimal" placeholder="Número en base 20" oninput="convertFromVigesimal()">
+
+            <label for="bcd">BCD (Decimal Codificado en Binario)</label>
+            <input type="text" id="bcd" placeholder="Número en BCD" oninput="convertFromBCD()">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
