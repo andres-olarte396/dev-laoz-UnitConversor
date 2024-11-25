@@ -1,40 +1,97 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Conversor de Sistemas de Numeración</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="container">
-        <h1>Conversor de Sistemas de Numeración</h1>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="../dev-laoz-WaveArtCSS/src/theme.css" />
+    <link rel="stylesheet" href="../dev-laoz-WaveArtCSS/src/base.css" />
+    <link rel="stylesheet" href="../dev-laoz-WaveArtCSS/src/components.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Conversor de Sistemas de Numeración</h1>
+      <p>
+        Este proyecto es una página web sencilla y visualmente agradable para
+        realizar conversiones entre varios sistemas de numeración, tales como
+        decimal, binario, octal, hexadecimal, y más. La página permite ingresar
+        un número en cualquiera de estos sistemas y ver las conversiones
+        automáticas en los otros sistemas soportados.
+      </p>
+    </header>
+    <main>
+      <div class="container">
         <div class="converter">
-            <label for="decimal">Decimal</label>
-            <input type="text" id="decimal" placeholder="Número decimal" oninput="convertFromDecimal()">
+          <label for="decimal">Decimal</label>
+          <input
+            type="text"
+            id="decimal"
+            placeholder="Número decimal"
+            oninput="convertFromDecimal()"
+          />
 
-            <label for="binary">Binario</label>
-            <input type="text" id="binary" placeholder="Número binario" oninput="convertFromBinary()">
+          <label for="binary">Binario</label>
+          <input
+            type="text"
+            id="binary"
+            placeholder="Número binario"
+            oninput="convertFromBinary()"
+          />
 
-            <label for="octal">Octal</label>
-            <input type="text" id="octal" placeholder="Número octal" oninput="convertFromOctal()">
+          <label for="octal">Octal</label>
+          <input
+            type="text"
+            id="octal"
+            placeholder="Número octal"
+            oninput="convertFromOctal()"
+          />
 
-            <label for="hexadecimal">Hexadecimal</label>
-            <input type="text" id="hexadecimal" placeholder="Número hexadecimal" oninput="convertFromHexadecimal()">
+          <label for="hexadecimal">Hexadecimal</label>
+          <input
+            type="text"
+            id="hexadecimal"
+            placeholder="Número hexadecimal"
+            oninput="convertFromHexadecimal()"
+          />
 
-            <label for="ternary">Ternario</label>
-            <input type="text" id="ternary" placeholder="Número en base 3" oninput="convertFromTernary()">
+          <label for="ternary">Ternario</label>
+          <input
+            type="text"
+            id="ternary"
+            placeholder="Número en base 3"
+            oninput="convertFromTernary()"
+          />
 
-            <label for="quintal">Quintal</label>
-            <input type="text" id="quintal" placeholder="Número en base 5" oninput="convertFromQuintal()">
+          <label for="quintal">Quintal</label>
+          <input
+            type="text"
+            id="quintal"
+            placeholder="Número en base 5"
+            oninput="convertFromQuintal()"
+          />
 
-            <label for="vigesimal">Vigesimal</label>
-            <input type="text" id="vigesimal" placeholder="Número en base 20" oninput="convertFromVigesimal()">
+          <label for="vigesimal">Vigesimal</label>
+          <input
+            type="text"
+            id="vigesimal"
+            placeholder="Número en base 20"
+            oninput="convertFromVigesimal()"
+          />
 
-            <label for="bcd">BCD (Decimal Codificado en Binario)</label>
-            <input type="text" id="bcd" placeholder="Número en BCD" oninput="convertFromBCD()">
+          <label for="bcd">BCD (Decimal Codificado en Binario)</label>
+          <input
+            type="text"
+            id="bcd"
+            placeholder="Número en BCD"
+            oninput="convertFromBCD()"
+          />
         </div>
-    </div>
+      </div>
+    </main>
+    <footer>
+      <p>© 2024 Mi Negocio. Todos los derechos reservados.</p>
+    </footer>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
