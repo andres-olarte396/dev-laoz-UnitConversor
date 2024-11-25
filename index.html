@@ -17,17 +17,18 @@
   <body>
     <header>
       <h1>Conversor de Sistemas de Numeración</h1>
-      <p>
-        Este proyecto es una página web sencilla y visualmente agradable para
-        realizar conversiones entre varios sistemas de numeración, tales como
-        decimal, binario, octal, hexadecimal, y más. La página permite ingresar
-        un número en cualquiera de estos sistemas y ver las conversiones
-        automáticas en los otros sistemas soportados.
-      </p>
     </header>
     <main>
       <div class="container">
-        <div class="converter">
+        <fieldset>
+          <legend>Conversor de Sistemas de Numeración</legend>
+          <p>
+            Este proyecto es una página web sencilla y visualmente agradable
+            para realizar conversiones entre varios sistemas de numeración,
+            tales como decimal, binario, octal, hexadecimal, y más. La página
+            permite ingresar un número en cualquiera de estos sistemas y ver las
+            conversiones automáticas en los otros sistemas soportados.
+          </p>
           <label for="decimal">Decimal</label>
           <input
             type="text"
@@ -35,7 +36,6 @@
             placeholder="Número decimal"
             oninput="convertFromDecimal()"
           />
-
           <label for="binary">Binario</label>
           <input
             type="text"
@@ -43,7 +43,6 @@
             placeholder="Número binario"
             oninput="convertFromBinary()"
           />
-
           <label for="octal">Octal</label>
           <input
             type="text"
@@ -51,7 +50,6 @@
             placeholder="Número octal"
             oninput="convertFromOctal()"
           />
-
           <label for="hexadecimal">Hexadecimal</label>
           <input
             type="text"
@@ -59,7 +57,6 @@
             placeholder="Número hexadecimal"
             oninput="convertFromHexadecimal()"
           />
-
           <label for="ternary">Ternario</label>
           <input
             type="text"
@@ -67,7 +64,6 @@
             placeholder="Número en base 3"
             oninput="convertFromTernary()"
           />
-
           <label for="quintal">Quintal</label>
           <input
             type="text"
@@ -75,7 +71,6 @@
             placeholder="Número en base 5"
             oninput="convertFromQuintal()"
           />
-
           <label for="vigesimal">Vigesimal</label>
           <input
             type="text"
@@ -83,7 +78,6 @@
             placeholder="Número en base 20"
             oninput="convertFromVigesimal()"
           />
-
           <label for="bcd">BCD (Decimal Codificado en Binario)</label>
           <input
             type="text"
@@ -91,7 +85,7 @@
             placeholder="Número en BCD"
             oninput="convertFromBCD()"
           />
-        </div>
+        </fieldset>
       </div>
     </main>
     <footer>
